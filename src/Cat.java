@@ -32,7 +32,7 @@ public class Cat {
 		// Draw the head
 		g2.setColor(Color.white);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
-		
+				
 		// Draw nose
 		g2.setColor(Color.pink);
 		g2.fillOval(x+45, y+45,NOSE_DIM , NOSE_DIM );
@@ -44,6 +44,14 @@ public class Cat {
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		x += EYE_SEPARATION;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
+		// Adds pupils
+		g2.setColor(Color.black);
+		x = catX + EYE_X; 
+		y = catY + EYE_Y;
+		g2.fillOval(x, y, (int)(EYE_WIDTH/1.5), (int)(EYE_HEIGHT/1.5));
+		x += EYE_SEPARATION;
+		g2.fillOval(x, y, (int)(EYE_WIDTH/1.5), (int)(EYE_HEIGHT/1.5));
+		
 		// Draw the mouth
 		g2.setColor(Color.pink);
 		x = catX + MOUTH_X;
