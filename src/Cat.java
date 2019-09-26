@@ -43,6 +43,7 @@ public class Cat {
 		y = catY + EYE_Y;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		x += EYE_SEPARATION;
+		g2.setColor(Color.blue);
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		// Adds pupils
 		g2.setColor(Color.black);
